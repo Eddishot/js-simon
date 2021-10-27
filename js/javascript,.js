@@ -15,7 +15,13 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 */
 // 77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
 
+// identifico le variabili globali
 
+let numbersGenerate = [];
+
+ let numbersGenerateUser = [];
+
+ let  numbersGenerateWin = [];
 
 // creo una funzione per geneare un numero random
 
@@ -42,23 +48,21 @@ function generateRandom(){
 alert("Devi memorizzare questi numeri.Hai 30 secondi " +  arrayNumbersRandomlyGenerated )
 console.log(arrayNumbersRandomlyGenerated)
 
-setTimeout(nameFunction, 300);
+setTimeout(nameFunction, 3000);
 
 
-//identifico le variabili globali 
 
- let numbersGenerate = [];
-
- let numbersGenerateUser = [];
-
- let  numbersGenerateWin = [];
-
-// creo la funzione principale
 
 function nameFunction(){
 
     let numbersGenerateUser = [];
-}
 
+    for (let i = 0; i < 5; i++) {
+        const promptUser = parseInt(prompt("inserisci numeri che hai memorizzato"))
+        numbersGenerateUser.push(promptUser)
+    }
+    
+}
+console.log(numbersGenerateUser)
 
 
