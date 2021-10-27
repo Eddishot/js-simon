@@ -8,7 +8,9 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 /*
 --- allora, faccio commparire un alert in cui subito mi dice il numero Random genaratomi dalla funzione
 
---- poi al click OK dell'utente 
+--- poi al click OK dell'utente parte il timer di 30 secondi in cui ha tempo di memorizzare le cifre
+
+--- 
 
 */
 // 77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
@@ -26,19 +28,37 @@ function generateRandom(){
     for (let i = 0; i < 5; i++) {
         const numbers = Math.floor(Math.random() * 100);
 
-        numberGenerate.push(numbers)
+        numbersGenerate.push(numbers)
         
     }
 
-    return numberGenerate;
+    return numbersGenerate;
 
 
 
 }   
 
 
-alert(arrayNumbersRandomlyGenerated )
+alert("Devi memorizzare questi numeri.Hai 30 secondi " +  arrayNumbersRandomlyGenerated )
 console.log(arrayNumbersRandomlyGenerated)
+
+setTimeout(nameFunction, 300);
+
+
+//identifico le variabili globali 
+
+ let numbersGenerate = [];
+
+ let numbersGenerateUser = [];
+
+ let  numbersGenerateWin = [];
+
+// creo la funzione principale
+
+function nameFunction(){
+
+    let numbersGenerateUser = [];
+}
 
 
 
