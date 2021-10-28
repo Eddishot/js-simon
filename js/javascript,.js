@@ -56,13 +56,20 @@ setTimeout(nameFunction, 3000);
 function nameFunction(){
 
     let numbersGenerateUser = [];
+    let rightNumbers = [];
 
     for (let i = 0; i < 5; i++) {
         const promptUser = parseInt(prompt("inserisci numeri che hai memorizzato"))
         numbersGenerateUser.push(promptUser)
     }
+    console.log(numbersGenerateUser)
+
+    numbersGenerateUser.forEach(userNumber => {
+        if(arrayNumbersRandomlyGenerated.includes (userNumber)){
+            rightNumbers.push(numbers)
+        }
+    })
     
 }
-console.log(numbersGenerateUser)
 
 
